@@ -20,7 +20,7 @@ export default function Login() {
               <li>At least one lowercase character</li>
               <li>At least one uppercase character</li>
               <li>At least one number character</li>
-              <li>At least one symbol character</li>
+              <li>At least one symbol character </li>
             </ul>
           </View>
         );
