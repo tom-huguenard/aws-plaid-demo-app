@@ -57,7 +57,7 @@ export default function Transactions({ id, accounts = {} }) {
 
   useEffect(() => {
     getTransactions();
-  }, []);
+  });
 
   return (
     <View>

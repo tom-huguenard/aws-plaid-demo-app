@@ -26,7 +26,7 @@ export default function Protected() {
 
   useEffect(() => {
     getItems();
-  }, []);
+  });
 
   return (
     <Flex direction="column">

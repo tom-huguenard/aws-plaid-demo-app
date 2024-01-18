@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { usePlaidLink } from 'react-plaid-link';
 
 export default function PlaidLink({ token, onSuccess, onExit }) {
-  const { open, ready, error } = usePlaidLink({
+  const { open } = usePlaidLink({
     token,
     onSuccess,
     onExit,

@@ -32,7 +32,7 @@ export default function Accounts({ id, updateAccounts }) {
 
   useEffect(() => {
     getAccounts();
-  }, []);
+  });
 
   return (
     <Table highlightOnHover={true} variation="striped">
