@@ -100,8 +100,7 @@ def decode_data(data: str) -> str:
 
 class Encoder(json.JSONEncoder):
     """
-    JSONEncoder subclass that knows how to encode date/time, decimal types, and
-    UUIDs.
+    JSONEncoder subclass that knows how to encode date/time, decimal types, and UUIDs.
     """
 
     def default(self, obj):

@@ -21,11 +21,9 @@ Parameters:
   PlaidClientId:
     Type: String
     Description: Plaid Client ID
-    NoEcho: true
   PlaidSecretKey:
     Type: String
     Description: Plaid Secret Key
-    NoEcho: true
   PlaidEnvironment:
     Type: String
     Description: Plaid Environment
@@ -37,7 +35,6 @@ Parameters:
   GitHubAccessToken:
     Type: String
     Description: GitHub Personal Access Token
-    NoEcho: true
   BranchName:
     Type: String
     Description: Git branch name
@@ -87,8 +84,8 @@ Resources:
       Name: !Sub "plaid/${PlaidEnvironment}/credentials"
       SecretString: !Sub |-
         {
-          "client_id": "${PlaidClientId}",
-          "client_secret": "${PlaidSecretKey}",
+          "client_id": "62eabf2650f8030013968c6b",
+          "client_secret": "b2edb5aae6ff6f74e76e3c73622a06",
           "endpoint": "https://${PlaidEnvironment}.plaid.com"
         }
       Tags:
